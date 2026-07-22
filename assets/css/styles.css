@@ -52,9 +52,6 @@ button,input,textarea,select{font:inherit}
   transition:background .18s ease, box-shadow .18s ease, border-color .18s ease, transform .18s ease;
 }
 .hotspot:hover{
-  border-color:rgba(242,195,75,.72);
-  box-shadow:0 0 16px rgba(216,165,29,.42), inset 0 -3px 0 rgba(242,195,75,.95);
-  background:linear-gradient(180deg,rgba(216,165,29,.02),rgba(216,165,29,.10));
   outline:none;
 }
 /* Hotspots mapped to the approved 1536×1024 design */
@@ -70,10 +67,10 @@ button,input,textarea,select{font:inherit}
 .hs-sponsor{left:20.25%;top:59.00%;width:17.25%;height:5.75%}
 .hs-about-more{left:26.85%;top:89.70%;width:14.00%;height:4.15%}
 .hs-sponsor-lower{left:43.85%;top:77.05%;width:21.15%;height:4.55%}
-.hs-instagram{left:94.75%;top:27.35%;width:3.10%;height:4.55%}
-.hs-facebook{left:94.75%;top:32.55%;width:3.10%;height:4.55%}
-.hs-youtube{left:94.75%;top:37.75%;width:3.10%;height:4.55%}
-.hs-email{left:94.75%;top:42.95%;width:3.10%;height:4.55%}
+.hs-instagram{left:92.55%;top:27.25%;width:3.55%;height:4.65%}
+.hs-facebook{left:92.55%;top:32.45%;width:3.55%;height:4.65%}
+.hs-youtube{left:92.55%;top:37.65%;width:3.55%;height:4.65%}
+.hs-email{left:92.55%;top:42.85%;width:3.55%;height:4.65%}
 
 /* Mobile version preserves the same approved visual language */
 .mobile-home{display:none}
@@ -207,33 +204,28 @@ form{display:grid;gap:17px}
 
 
 
-/* SOCIAL ICON GLOW — HOVER ONLY */
+/* SOCIAL ICONS — ALIGNED HOVER SQUARES */
 .hs-instagram,
 .hs-facebook,
 .hs-youtube,
 .hs-email{
   border:1px solid transparent;
-  border-radius:2px;
+  border-radius:1px;
   background:transparent;
   box-shadow:none;
-  transition:
-    background .18s ease,
-    border-color .18s ease,
-    box-shadow .18s ease,
-    transform .18s ease;
+  transform:none;
 }
 
 .hs-instagram:hover,
 .hs-facebook:hover,
 .hs-youtube:hover,
 .hs-email:hover{
-  border-color:rgba(242,195,75,.95);
-  background:rgba(8,31,83,.18);
-  transform:translateY(-1px);
+  border-color:rgba(242,195,75,.98);
+  background:rgba(216,165,29,.025);
   box-shadow:
-    0 0 5px rgba(242,195,75,.82),
-    0 0 10px rgba(242,195,75,.28),
-    inset 0 0 4px rgba(23,103,255,.18);
+    0 0 5px rgba(242,195,75,.72),
+    inset 0 0 0 1px rgba(242,195,75,.30);
+  transform:none;
 }
 
 /* Prevent a clicked hotspot from keeping a gold focus rectangle */
@@ -247,13 +239,29 @@ form{display:grid;gap:17px}
   transform:none;
 }
 
-/* TIGHT TOP NAVIGATION HOVER */
-.hs-home:hover,.hs-about:hover,.hs-teams:hover,.hs-schedule:hover,
-.hs-sponsors:hover,.hs-registration:hover,.hs-contact:hover{
-  border-color:rgba(242,195,75,.72);
-  background:rgba(216,165,29,.035);
-  box-shadow:
-    0 0 7px rgba(242,195,75,.42),
-    inset 0 -2px 0 rgba(242,195,75,.96);
+/* TOP NAVIGATION — GOLD UNDERLINE ONLY */
+.hs-home,
+.hs-about,
+.hs-teams,
+.hs-schedule,
+.hs-sponsors,
+.hs-registration,
+.hs-contact{
+  border:none;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+
+.hs-home:hover,
+.hs-about:hover,
+.hs-teams:hover,
+.hs-schedule:hover,
+.hs-sponsors:hover,
+.hs-registration:hover,
+.hs-contact:hover{
+  border:none;
+  background:transparent;
+  box-shadow:inset 0 -3px 0 rgba(242,195,75,.98);
   transform:none;
 }
