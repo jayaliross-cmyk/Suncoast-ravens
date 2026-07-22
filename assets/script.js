@@ -1,2 +1,0 @@
-const menu=document.querySelector('.menu');const nav=document.querySelector('.navlinks');if(menu){menu.addEventListener('click',()=>nav.classList.toggle('open'))}
-document.querySelectorAll('form[data-mailto]').forEach(form=>{form.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form);const subject=form.dataset.subject||'Suncoast Ravens Website Inquiry';let body='';for(const [k,v] of data.entries()) body+=`${k}: ${v}\n`;window.location.href=`mailto:${form.dataset.mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;});});
