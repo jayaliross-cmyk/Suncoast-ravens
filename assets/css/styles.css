@@ -51,7 +51,7 @@ button,input,textarea,select{font:inherit}
   font-size:0;
   transition:background .18s ease, box-shadow .18s ease, border-color .18s ease, transform .18s ease;
 }
-.hotspot:focus-visible,.hotspot:hover{
+.hotspot:hover{
   border-color:rgba(242,195,75,.72);
   box-shadow:0 0 16px rgba(216,165,29,.42), inset 0 -3px 0 rgba(242,195,75,.95);
   background:linear-gradient(180deg,rgba(216,165,29,.02),rgba(216,165,29,.10));
@@ -69,7 +69,7 @@ button,input,textarea,select{font:inherit}
 .hs-register{left:3.05%;top:59.00%;width:16.35%;height:5.75%}
 .hs-sponsor{left:20.25%;top:59.00%;width:17.25%;height:5.75%}
 .hs-about-more{left:26.85%;top:89.70%;width:14.00%;height:4.15%}
-.hs-sponsor-lower{left:43.55%;top:76.70%;width:23.90%;height:5.45%}
+.hs-sponsor-lower{left:43.85%;top:77.05%;width:21.15%;height:4.55%}
 .hs-instagram{left:94.75%;top:27.35%;width:3.10%;height:4.55%}
 .hs-facebook{left:94.75%;top:32.55%;width:3.10%;height:4.55%}
 .hs-youtube{left:94.75%;top:37.75%;width:3.10%;height:4.55%}
@@ -196,23 +196,26 @@ form{display:grid;gap:17px}
 }
 
 .hs-register:hover,.hs-sponsor:hover,.hs-about-more:hover,.hs-sponsor-lower:hover,.hs-support:hover{
-  transform:translateY(-2px);
-  box-shadow:0 0 22px rgba(242,195,75,.48), inset 0 0 0 2px rgba(242,195,75,.65);
+  transform:translateY(-1px);
+  border-color:rgba(242,195,75,.92);
+  background:rgba(216,165,29,.025);
+  box-shadow:
+    0 0 6px rgba(242,195,75,.72),
+    0 0 11px rgba(242,195,75,.26),
+    inset 0 0 0 1px rgba(242,195,75,.55);
 }
 
 
 
-/* SOCIAL ICON GLOW — MATCHES TOP BUTTONS */
+/* SOCIAL ICON GLOW — HOVER ONLY */
 .hs-instagram,
 .hs-facebook,
 .hs-youtube,
 .hs-email{
-  border:1px solid rgba(216,165,29,.95);
+  border:1px solid transparent;
   border-radius:2px;
-  background:rgba(2,3,5,.20);
-  box-shadow:
-    0 0 5px rgba(216,165,29,.40),
-    inset 0 0 3px rgba(216,165,29,.24);
+  background:transparent;
+  box-shadow:none;
   transition:
     background .18s ease,
     border-color .18s ease,
@@ -223,27 +226,30 @@ form{display:grid;gap:17px}
 .hs-instagram:hover,
 .hs-facebook:hover,
 .hs-youtube:hover,
-.hs-email:hover,
-.hs-instagram:focus-visible,
-.hs-facebook:focus-visible,
-.hs-youtube:focus-visible,
-.hs-email:focus-visible{
-  border-color:rgba(242,195,75,1);
-  background:rgba(8,31,83,.42);
-  transform:translateY(-2px);
+.hs-email:hover{
+  border-color:rgba(242,195,75,.95);
+  background:rgba(8,31,83,.18);
+  transform:translateY(-1px);
   box-shadow:
-    0 0 7px rgba(242,195,75,.92),
-    0 0 15px rgba(242,195,75,.38),
-    inset 0 0 7px rgba(23,103,255,.24);
+    0 0 5px rgba(242,195,75,.82),
+    0 0 10px rgba(242,195,75,.28),
+    inset 0 0 4px rgba(23,103,255,.18);
+}
+
+/* Prevent a clicked hotspot from keeping a gold focus rectangle */
+.hotspot:focus{
   outline:none;
+}
+.hotspot:focus:not(:hover){
+  border-color:transparent;
+  background:transparent;
+  box-shadow:none;
+  transform:none;
 }
 
 /* TIGHT TOP NAVIGATION HOVER */
 .hs-home:hover,.hs-about:hover,.hs-teams:hover,.hs-schedule:hover,
-.hs-sponsors:hover,.hs-registration:hover,.hs-contact:hover,
-.hs-home:focus-visible,.hs-about:focus-visible,.hs-teams:focus-visible,
-.hs-schedule:focus-visible,.hs-sponsors:focus-visible,
-.hs-registration:focus-visible,.hs-contact:focus-visible{
+.hs-sponsors:hover,.hs-registration:hover,.hs-contact:hover{
   border-color:rgba(242,195,75,.72);
   background:rgba(216,165,29,.035);
   box-shadow:
