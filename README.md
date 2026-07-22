@@ -25,3 +25,8 @@ The approved homepage image is stored at:
 `assets/images/suncoast-ravens-homepage.png`
 
 Transparent clickable hotspots are placed over its navigation and call-to-action buttons.
+
+## Revision
+- Volunteer hours updated from 2,400+ to 1,400+.
+- Desktop click targets recalibrated to align with the visible navigation, buttons, and social icons.
+- Gold/blue hover glow added to clickable homepage elements.

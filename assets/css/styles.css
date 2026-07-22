@@ -46,33 +46,34 @@ button,input,textarea,select{font:inherit}
   z-index:5;
   display:block;
   border:1px solid transparent;
-  border-radius:3px;
+  border-radius:2px;
   color:transparent;
   font-size:0;
+  transition:background .18s ease, box-shadow .18s ease, border-color .18s ease, transform .18s ease;
 }
 .hotspot:focus-visible,.hotspot:hover{
-  border-color:rgba(242,195,75,.7);
-  box-shadow:0 0 20px rgba(216,165,29,.35);
-  background:rgba(216,165,29,.05);
+  border-color:rgba(242,195,75,.72);
+  box-shadow:0 0 16px rgba(216,165,29,.42), inset 0 -3px 0 rgba(242,195,75,.95);
+  background:linear-gradient(180deg,rgba(216,165,29,.02),rgba(216,165,29,.10));
   outline:none;
 }
 /* Hotspots mapped to the approved 1536×1024 design */
-.hs-home{left:8.5%;top:11.2%;width:7%;height:4.7%}
-.hs-about{left:17.5%;top:11.2%;width:8%;height:4.7%}
-.hs-teams{left:27%;top:11.2%;width:8%;height:4.7%}
-.hs-schedule{left:36.8%;top:11.2%;width:10%;height:4.7%}
-.hs-sponsors{left:47.4%;top:11.2%;width:10%;height:4.7%}
-.hs-registration{left:58.1%;top:11.2%;width:13%;height:4.7%}
-.hs-contact{left:71.4%;top:11.2%;width:9%;height:4.7%}
-.hs-support{left:82.4%;top:10.7%;width:15%;height:5.3%}
-.hs-register{left:3.2%;top:58.8%;width:16.3%;height:6.2%}
-.hs-sponsor{left:20.4%;top:58.8%;width:17%;height:6.2%}
-.hs-about-more{left:27%;top:88.2%;width:13.8%;height:4.6%}
-.hs-sponsor-lower{left:43.7%;top:76.5%;width:22%;height:5.6%}
-.hs-instagram{left:94.2%;top:27%;width:3.8%;height:5%}
-.hs-facebook{left:94.2%;top:32.2%;width:3.8%;height:5%}
-.hs-youtube{left:94.2%;top:37.5%;width:3.8%;height:5%}
-.hs-email{left:94.2%;top:42.8%;width:3.8%;height:5%}
+.hs-home{left:9.15%;top:10.70%;width:4.65%;height:4.65%}
+.hs-about{left:17.85%;top:10.70%;width:4.55%;height:4.65%}
+.hs-teams{left:25.20%;top:10.70%;width:4.80%;height:4.65%}
+.hs-schedule{left:32.55%;top:10.70%;width:5.95%;height:4.65%}
+.hs-sponsors{left:41.20%;top:10.70%;width:6.80%;height:4.65%}
+.hs-registration{left:50.25%;top:10.70%;width:8.75%;height:4.65%}
+.hs-contact{left:62.20%;top:10.70%;width:5.75%;height:4.65%}
+.hs-support{left:83.55%;top:10.15%;width:14.05%;height:5.35%}
+.hs-register{left:3.05%;top:59.00%;width:16.35%;height:5.75%}
+.hs-sponsor{left:20.25%;top:59.00%;width:17.25%;height:5.75%}
+.hs-about-more{left:26.85%;top:89.70%;width:14.00%;height:4.15%}
+.hs-sponsor-lower{left:43.55%;top:76.70%;width:23.90%;height:5.45%}
+.hs-instagram{left:94.75%;top:27.35%;width:3.10%;height:4.55%}
+.hs-facebook{left:94.75%;top:32.55%;width:3.10%;height:4.55%}
+.hs-youtube{left:94.75%;top:37.75%;width:3.10%;height:4.55%}
+.hs-email{left:94.75%;top:42.95%;width:3.10%;height:4.55%}
 
 /* Mobile version preserves the same approved visual language */
 .mobile-home{display:none}
@@ -192,4 +193,13 @@ form{display:grid;gap:17px}
   .grid-2,.grid-3,.tiers{grid-template-columns:1fr}
   .event{grid-template-columns:86px 1fr}.event .badge{grid-column:2}
   .footer-row{flex-direction:column;align-items:flex-start}
+}
+
+.hs-register:hover,.hs-sponsor:hover,.hs-about-more:hover,.hs-sponsor-lower:hover,.hs-support:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 22px rgba(242,195,75,.48), inset 0 0 0 2px rgba(242,195,75,.65);
+}
+.hs-instagram:hover,.hs-facebook:hover,.hs-youtube:hover,.hs-email:hover{
+  box-shadow:0 0 18px rgba(242,195,75,.58), inset 0 0 0 1px rgba(242,195,75,.85);
+  background:rgba(216,165,29,.10);
 }
