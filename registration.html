@@ -7,12 +7,14 @@
 <a class="cta-small" href="sponsors.html">Support the Flock</a>
 </nav></div></header><main><section class="page-hero"><div class="page-hero-content"><div class="kicker">Earn Your Wings</div><h1>Player <span>Registration</span></h1></div></section><section class="section"><div class="wrap"><div class="grid-2">
 <div><h2 class="section-title">Join the <span>Flock</span></h2><p style="color:var(--muted);line-height:1.7">Submit your player’s information to express interest in evaluations, open practices, and future roster opportunities.</p></div>
-<form class="panel" data-preview-form>
-<div class="field"><label>Player Name</label><input required></div>
-<div class="grid-2"><div class="field"><label>Date of Birth</label><input type="date" required></div><div class="field"><label>Age Group</label><select><option>Choose</option><option>7U</option><option>8U</option><option>9U</option><option>10U</option><option>11U</option><option>12U</option></select></div></div>
-<div class="field"><label>Parent / Guardian</label><input required></div>
-<div class="grid-2"><div class="field"><label>Email</label><input type="email" required></div><div class="field"><label>Phone</label><input type="tel" required></div></div>
-<div class="field"><label>Positions and Experience</label><textarea></textarea></div>
+<form class="panel" action="https://formspree.io/f/YOUR_REGISTER_FORM_ID" method="POST">
+<input type="hidden" name="_subject" value="New Player Registration - Suncoast Ravens">
+<input type="hidden" name="_next" value="https://suncoastravens.org/thank-you.html">
+<div class="field"><label>Player Name</label><input name="player_name" required></div>
+<div class="grid-2"><div class="field"><label>Date of Birth</label><input type="date" name="dob" required></div><div class="field"><label>Age Group</label><select name="age_group"><option>Choose</option><option>7U</option><option>8U</option><option>9U</option><option>10U</option><option>11U</option><option>12U</option></select></div></div>
+<div class="field"><label>Parent / Guardian</label><input name="parent_guardian" required></div>
+<div class="grid-2"><div class="field"><label>Email</label><input type="email" name="email" required></div><div class="field"><label>Phone</label><input type="tel" name="phone" required></div></div>
+<div class="field"><label>Positions and Experience</label><textarea name="positions_experience"></textarea></div>
 <button class="btn gold" type="submit">Submit Registration</button>
 </form></div></div></section></main><footer class="site-footer"><div class="wrap footer-row">
 <div class="footer-brand">SUNCOAST RAVENS</div>
