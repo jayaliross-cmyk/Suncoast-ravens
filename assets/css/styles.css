@@ -80,7 +80,8 @@ button,input,textarea,select{font:inherit}
   overflow:hidden;
   background:
     linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.35)),
-    url("../images/suncoast-ravens-homepage.png") 51% top/auto 100% no-repeat;
+    url("../images/suncoast-ravens-homepage.png") 58% 30%/cover no-repeat;
+};
 }
 .mobile-actions{
   position:absolute;left:5%;right:5%;bottom:4%;
