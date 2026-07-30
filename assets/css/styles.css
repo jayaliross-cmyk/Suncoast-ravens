@@ -34,7 +34,7 @@ button,input,textarea,select{font:inherit}
 .desktop-home{
   position:relative;
   width:100%;
-  max-width:1300px;
+  max-width:1350px;
   margin:0 auto;
   aspect-ratio:3/2;
   background:#000 url("../images/suncoast-ravens-homepage.png") center top/100% 100% no-repeat;
