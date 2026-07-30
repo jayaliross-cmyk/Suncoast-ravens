@@ -67,7 +67,10 @@ button,input,textarea,select{font:inherit}
 .hs-sponsor{left:20.25%;top:59.00%;width:17.25%;height:5.75%}
 .hs-about-more{left:26.85%;top:89.70%;width:14.00%;height:4.15%}
 .hs-sponsor-lower{left:43.85%;top:77.05%;width:21.15%;height:4.55%}
-
+.hs-instagram{left:94.75%;top:27.35%;width:3.10%;height:4.55%}
+.hs-facebook{left:94.75%;top:32.55%;width:3.10%;height:4.55%}
+.hs-youtube{left:94.75%;top:37.75%;width:3.10%;height:4.55%}
+.hs-email{left:94.75%;top:42.95%;width:3.10%;height:4.55%}
 
 /* Mobile version preserves the same approved visual language */
 .mobile-home{display:none}
@@ -262,41 +265,5 @@ form{display:grid;gap:17px}
   box-shadow:inset 0 -3px 0 rgba(242,195,75,.98);
   transform:none;
 }
-/* SOCIAL ICON STACK â€” fixed position, independent of background image */
-.social-stack{
-  position:fixed;
-  top:26%;
-  right:2.2%;
-  z-index:15;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-.social-icon{
-  width:38px;
-  height:38px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px solid var(--gold);
-  border-radius:4px;
-  color:var(--gold);
-  background:rgba(3,4,6,.55);
-  transition:box-shadow .18s ease, background .18s ease, color .18s ease, transform .18s ease;
-}
-.social-icon svg{ width:19px; height:19px; }
-.social-icon:hover{
-  color:var(--gold-light);
-  border-color:var(--gold-light);
-  background:rgba(216,165,29,.12);
-  transform:translateY(-2px);
-  box-shadow:
-    0 0 6px rgba(242,195,75,.85),
-    0 0 14px rgba(242,195,75,.35);
-}
-
-@media (max-width: 900px){
-  .social-stack{ display:none; } /* mobile nav/drawer already links out separately */
-
 
 }
