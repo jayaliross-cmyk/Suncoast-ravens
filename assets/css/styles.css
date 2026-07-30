@@ -84,7 +84,7 @@ body.compact-page{
 .hero-image-band{
   position:relative;
   width:100%;
-  max-width:1536px;
+  max-width:1300px;
   margin:0 auto;
   border-bottom:2px solid var(--gold);
   line-height:0;
@@ -94,20 +94,6 @@ body.compact-page{
   height:auto;
   display:block;
 }
-.hero-overlay-actions{
-  position:absolute;
-  left:3.5%;
-  top:86%;
-  display:flex;
-  gap:1.2%;
-  flex-wrap:wrap;
-  z-index:3;
-}
-.hero-overlay-actions .btn{
-  padding:1.4% 1.8%;
-  font-size:clamp(9px, 1.15vw, 15px);
-}
-.hero-overlay-actions .btn small{display:block;font-size:70%;font-weight:600;text-transform:none;letter-spacing:0;opacity:.85;}
 .hero-overlay-socials{
   position:absolute;
   right:1.8%;
