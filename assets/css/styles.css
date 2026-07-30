@@ -133,16 +133,14 @@ body.compact-page{
 
 
 .page-hero{
-  position:relative;min-height:220px;display:flex;align-items:center;justify-content:center;gap:40px;text-align:left;
+  position:relative;min-height:220px;display:grid;place-items:center;text-align:center;
   border-bottom:2px solid var(--gold);
   background:
-    radial-gradient(circle at 50% 50%,rgba(3,21,61,.55),rgba(2,4,8,.97)),
-    #050608;
-  padding:24px 20px;
+    linear-gradient(90deg,rgba(2,4,8,.96),rgba(3,21,61,.78),rgba(2,4,8,.96)),
+    url("../images/suncoast-ravens-homepage.png") center 40%/cover no-repeat;
 }
-.page-hero:after{content:none}
-.page-hero-content{position:relative;z-index:2;padding:0;display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center;}
-.page-hero-crest{width:120px;height:120px;flex-shrink:0;}
+.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.35))}
+.page-hero-content{position:relative;z-index:2;padding:30px 20px}
 .kicker{color:var(--gold-light);text-transform:uppercase;font-weight:900;letter-spacing:3px}
 .page-hero h1{
   margin:8px 0 0;font-family:Impact,Arial Black,sans-serif;
