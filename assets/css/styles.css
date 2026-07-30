@@ -1,4 +1,3 @@
-
 :root{
   --black:#050608;
   --panel:#0b0d11;
@@ -81,56 +80,53 @@ body.compact-page{
   box-shadow:0 0 10px rgba(242,195,75,.85), 0 0 20px rgba(242,195,75,.4);
 }
 
-/* ===================== HOMEPAGE HERO (image background + real overlays) ===================== */
+/* ===================== HOMEPAGE HERO (real img element + overlays) ===================== */
 .hero-image-band{
   position:relative;
   width:100%;
   max-width:1536px;
   margin:0 auto;
-  aspect-ratio:1536/1024;
-  background:#0c0d10 url("../images/hero-final-bg.png") center top/100% 100% no-repeat;
   border-bottom:2px solid var(--gold);
-  overflow:hidden;
+  line-height:0;
+}
+.hero-bg-img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 .hero-overlay-actions{
   position:absolute;
   left:3.5%;
-  top:80%;
+  top:79%;
   display:flex;
-  gap:14px;
+  gap:1.2%;
   flex-wrap:wrap;
   z-index:3;
 }
-.hero-overlay-actions .btn small{display:block;font-size:10px;font-weight:600;text-transform:none;letter-spacing:0;opacity:.85;}
+.hero-overlay-actions .btn{
+  padding:1.2% 1.6%;
+  font-size:clamp(9px, 1.15vw, 15px);
+}
+.hero-overlay-actions .btn small{display:block;font-size:70%;font-weight:600;text-transform:none;letter-spacing:0;opacity:.85;}
 .hero-overlay-socials{
   position:absolute;
-  right:2%;
+  right:1.8%;
   top:24%;
   display:flex;
   flex-direction:column;
-  gap:9px;
+  gap:.8%;
   z-index:3;
+}
+.hero-overlay-socials .social-icon{
+  width:clamp(22px, 2.5vw, 38px);
+  height:clamp(22px, 2.5vw, 38px);
+}
+.hero-overlay-socials .social-icon svg{
+  width:55%;height:55%;
 }
 
 @media(max-width:900px){
-  .hero-overlay-actions{
-    position:static;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-    padding:16px;
-  }
-  .hero-overlay-socials{
-    position:static;
-    flex-direction:row;
-    justify-content:center;
-    padding:0 16px 16px;
-  }
-  .hero-image-band{
-    aspect-ratio:auto;
-    display:flex;
-    flex-direction:column;
-  }
+  .hero-overlay-actions .btn{padding:8px 12px;}
 }
 
 /* ===================== MISSION LINE / FOOTER BAND ===================== */
@@ -139,7 +135,13 @@ body.compact-page{
   font-size:clamp(22px,4vw,40px);color:var(--white);
 }
 .mission-line span{color:var(--royal-bright)}
-.mission-band{position:relative;overflow:hidden;}
+.mission-band{
+  position:relative;overflow:hidden;
+  padding:36px 0;
+  background:rgba(255,255,255,.02);
+  border-top:1px solid rgba(216,165,29,.3);
+  border-bottom:1px solid rgba(216,165,29,.3);
+}
 .feather{position:absolute;top:0;height:100%;width:auto;opacity:.9;pointer-events:none;z-index:1;}
 .feather-left{left:0;}
 .feather-right{right:0;}
