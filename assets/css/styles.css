@@ -73,44 +73,7 @@ button,input,textarea,select{font:inherit}
 .hs-email{left:94.75%;top:42.95%;width:3.10%;height:4.55%}
 
 /* Mobile version preserves the same approved visual language */
-.mobile-home{display:none}
-.mobile-hero{
-  min-height:100svh;
-  position:relative;
-  overflow:hidden;
-  background:
-    linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.35)),
-    url("../images/suncoast-ravens-homepage.png") 58% 30%/cover no-repeat;
-};
-}
-.mobile-actions{
-  position:absolute;left:5%;right:5%;bottom:4%;
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;
-}
-.mobile-actions a{
-  padding:14px 10px;text-align:center;text-transform:uppercase;
-  font-weight:900;letter-spacing:.7px;
-  border:2px solid var(--gold);background:rgba(3,4,6,.90);
-  box-shadow:0 8px 24px rgba(0,0,0,.65);
-}
-.mobile-actions .primary{background:linear-gradient(135deg,var(--gold-light),#9e6b00);color:#050608}
-.mobile-menu{
-  position:fixed;right:15px;top:15px;z-index:30;
-  width:48px;height:48px;border:2px solid var(--gold);
-  background:rgba(2,3,5,.92);color:white;font-size:24px;
-}
-.mobile-drawer{
-  position:fixed;z-index:29;inset:0 0 0 22%;
-  transform:translateX(105%);transition:.25s ease;
-  background:rgba(4,5,8,.98);border-left:2px solid var(--gold);
-  padding:85px 25px 30px;
-}
-.mobile-drawer.open{transform:translateX(0)}
-.mobile-drawer a{
-  display:block;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.12);
-  text-transform:uppercase;font-weight:900;letter-spacing:1px;
-}
-.mobile-drawer .support{color:var(--gold-light)}
+
 
 /* INNER PAGES */
 body.compact-page{
