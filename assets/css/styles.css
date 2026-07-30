@@ -112,6 +112,14 @@ button,input,textarea,select{font:inherit}
 .mobile-drawer .support{color:var(--gold-light)}
 
 /* INNER PAGES */
+body.compact-page{
+  zoom:0.9;
+}
+.site-header{
+  position:sticky;top:0;z-index:20;background:rgba(3,4,6,.96);
+  border-bottom:2px solid var(--gold);backdrop-filter:blur(14px);
+}
+
 .site-header{
   position:sticky;top:0;z-index:20;background:rgba(3,4,6,.96);
   border-bottom:2px solid var(--gold);backdrop-filter:blur(14px);
