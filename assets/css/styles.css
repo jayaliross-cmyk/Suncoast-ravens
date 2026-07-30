@@ -113,9 +113,10 @@ body.compact-page{
   border-bottom:2px solid var(--gold);
   background:
     radial-gradient(circle at 20% 30%,rgba(23,103,255,.14),transparent 35%),
-    url("../images/texture-crop.png");
-  background-size: 400px 180px;
-  background-color:#0c0d10;
+    radial-gradient(circle at 60% 15%, rgba(255,255,255,.03), transparent 40%),
+    radial-gradient(circle at 30% 80%, rgba(255,255,255,.025), transparent 35%),
+    radial-gradient(circle at 80% 60%, rgba(255,255,255,.02), transparent 30%),
+    #0c0d10;
   padding:56px 0;
 }
 .hero-talons{
@@ -131,7 +132,7 @@ body.compact-page{
 }
 .hero-grid{
   position:relative;z-index:2;
-  display:grid;grid-template-columns:1.1fr .9fr .5fr;gap:20px;align-items:center;
+  display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center;
 }
 .hero-title{
   font-family:'Anton',Impact,sans-serif;text-transform:uppercase;
@@ -149,9 +150,6 @@ body.compact-page{
 .hero-actions .btn small{display:block;font-size:10px;font-weight:600;text-transform:none;letter-spacing:0;opacity:.85;}
 .hero-crest{display:flex;justify-content:center;}
 .hero-crest img{width:100%;max-width:280px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.6));}
-.hero-side-copy{color:var(--white);font-size:15px;line-height:1.5;text-align:right;}
-.hero-side-copy p{margin:0 0 4px;}
-.hero-side-copy .marker-text{font-size:26px;display:block;}
 
 /* ===================== MISSION LINE / FOOTER BAND ===================== */
 .mission-line{
