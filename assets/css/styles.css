@@ -26,64 +26,11 @@ img{max-width:100%;display:block}
 button,input,textarea,select{font:inherit}
 .wrap{width:min(1180px,92%);margin:auto}
 
-/* APPROVED HOMEPAGE */
-.home-page{
-  background:#000;
-  min-height:100vh;
-}
-.desktop-home{
-  position:relative;
-  width:100%;
-  max-width:1350px;
-  margin:0 auto;
-  aspect-ratio:3/2;
-  background:#000 url("../images/suncoast-ravens-homepage.png") center top/100% 100% no-repeat;
-  overflow:hidden;
-  box-shadow:0 0 80px rgba(0,0,0,.95);
-}
-.hotspot{
-  position:absolute;
-  z-index:5;
-  display:block;
-  border:1px solid transparent;
-  border-radius:2px;
-  color:transparent;
-  font-size:0;
-  transition:background .18s ease, box-shadow .18s ease, border-color .18s ease, transform .18s ease;
-}
-.hotspot:hover{
-  outline:none;
-}
-/* Hotspots mapped to the approved 1536×1024 design */
-.hs-home{left:9.30%;top:11.25%;width:4.10%;height:2.75%}
-.hs-about{left:18.05%;top:11.25%;width:4.05%;height:2.75%}
-.hs-teams{left:25.35%;top:11.25%;width:4.35%;height:2.75%}
-.hs-schedule{left:32.75%;top:11.25%;width:5.55%;height:2.75%}
-.hs-sponsors{left:41.45%;top:11.25%;width:6.25%;height:2.75%}
-.hs-registration{left:50.55%;top:11.25%;width:8.20%;height:2.75%}
-.hs-contact{left:62.45%;top:11.25%;width:5.20%;height:2.75%}
-.hs-support{left:83.55%;top:10.15%;width:14.05%;height:5.35%}
-.hs-register{left:3.05%;top:59.00%;width:16.35%;height:5.75%}
-.hs-sponsor{left:20.25%;top:59.00%;width:17.25%;height:5.75%}
-.hs-about-more{left:26.85%;top:89.70%;width:14.00%;height:4.15%}
-.hs-sponsor-lower{left:43.85%;top:77.05%;width:21.15%;height:4.55%}
-.hs-instagram{left:94.75%;top:27.35%;width:3.10%;height:4.55%}
-.hs-facebook{left:94.75%;top:32.55%;width:3.10%;height:4.55%}
-.hs-youtube{left:94.75%;top:37.75%;width:3.10%;height:4.55%}
-.hs-email{left:94.75%;top:42.95%;width:3.10%;height:4.55%}
-
-/* Mobile version preserves the same approved visual language */
-
-
-/* INNER PAGES */
 body.compact-page{
   zoom:0.9;
 }
-.site-header{
-  position:sticky;top:0;z-index:20;background:rgba(3,4,6,.96);
-  border-bottom:2px solid var(--gold);backdrop-filter:blur(14px);
-}
 
+/* ===================== HEADER / NAV ===================== */
 .site-header{
   position:sticky;top:0;z-index:20;background:rgba(3,4,6,.96);
   border-bottom:2px solid var(--gold);backdrop-filter:blur(14px);
@@ -95,157 +42,6 @@ body.compact-page{
 .site-nav a:hover,.site-nav .active{color:var(--gold-light)}
 .cta-small{border:1px solid var(--gold);padding:12px 15px}
 
-
-.page-hero{
-  position:relative;min-height:220px;display:grid;place-items:center;text-align:center;
-  border-bottom:2px solid var(--gold);
-  background:
-    linear-gradient(90deg,rgba(2,4,8,.96),rgba(3,21,61,.78),rgba(2,4,8,.96)),
-    url("../images/suncoast-ravens-homepage.png") center 40%/cover no-repeat;
-}
-.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.35))}
-.page-hero-content{position:relative;z-index:2;padding:30px 20px}
-.kicker{color:var(--gold-light);text-transform:uppercase;font-weight:900;letter-spacing:3px}
-.page-hero h1{
-  margin:8px 0 0;font-family:Impact,Arial Black,sans-serif;
-  font-size:clamp(52px,8vw,105px);line-height:.9;text-transform:uppercase;
-  text-shadow:6px 6px 0 #000;
-}
-.page-hero h1 span{color:var(--royal-bright)}
-.section{padding:72px 0}
-.section-title{font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;font-size:clamp(38px,5vw,64px);margin:0 0 25px}
-.section-title span{color:var(--gold)}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.panel{
-  background:linear-gradient(145deg,rgba(14,18,24,.96),rgba(5,7,10,.96));
-  border:1px solid var(--line);padding:28px;box-shadow:0 20px 50px rgba(0,0,0,.35);
-}
-.panel h2,.panel h3{font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;letter-spacing:.5px}
-.panel h3{font-size:28px;margin:0 0 12px;color:var(--gold-light)}
-.panel p,.panel li{color:var(--muted);line-height:1.65}
-.btn{
-  display:inline-block;padding:14px 20px;border:2px solid var(--gold);
-  text-transform:uppercase;font-weight:900;letter-spacing:1px;
-  background:rgba(4,5,8,.85);
-}
-.btn.gold{background:linear-gradient(135deg,var(--gold-light),#9d6b00);color:#050608}
-.btn.blue{background:linear-gradient(135deg,#154eb9,#041d59);border-color:#1e70ff}
-.schedule-list{display:grid;gap:14px}
-.event{
-  display:grid;grid-template-columns:120px 1fr auto;align-items:center;gap:20px;
-  background:rgba(5,7,10,.92);border:1px solid var(--line);padding:18px;
-}
-.event-date{font-family:Impact,Arial Black,sans-serif;font-size:28px;color:var(--gold-light);text-align:center}
-.event h3{margin:0;font-size:22px}.event p{margin:5px 0 0;color:var(--muted)}
-.badge{background:#061b54;border:1px solid #155fff;padding:8px 10px;font-size:12px;font-weight:900}
-.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.tier{background:#080a0e;border:2px solid var(--gold);padding:23px 20px;display:flex;flex-direction:column}
-.tier:nth-child(odd){border-color:#155fff}
-.tier .price{font-family:Impact,Arial Black,sans-serif;font-size:48px}
-.tier h3{font-size:26px;margin:10px -20px 18px;padding:11px 15px;text-align:center;background:var(--gold);color:#050608}
-.tier:nth-child(odd) h3{background:#0b47bb;color:white}
-.tier ul{padding-left:18px;flex:1}
-form{display:grid;gap:17px}
-.field label{display:block;margin-bottom:7px;color:var(--gold-light);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
-.field input,.field textarea,.field select{
-  width:100%;padding:14px;background:#11161e;color:white;border:1px solid #36404f;
-}
-.field textarea{min-height:150px;resize:vertical}
-.notice{padding:14px 16px;border:1px solid var(--gold);background:rgba(216,165,29,.09);color:#f4d77e}
-.site-footer{padding:35px 0;border-top:2px solid var(--gold);background:#020305}
-.footer-row{display:flex;justify-content:space-between;gap:24px;align-items:center}
-.footer-row p{color:#9ca5b2;max-width:680px;margin:0}
-.footer-brand{font-family:Impact,Arial Black,sans-serif;font-size:25px;color:var(--gold-light)}
-
-@media(max-width:900px){
-  .desktop-home{display:none}.mobile-home{display:block}
-  .site-nav{display:none}
-  .grid-2,.grid-3,.tiers{grid-template-columns:1fr}
-  .event{grid-template-columns:86px 1fr}.event .badge{grid-column:2}
-  .footer-row{flex-direction:column;align-items:flex-start}
-}
-
-.hs-register:hover,.hs-sponsor:hover,.hs-about-more:hover,.hs-sponsor-lower:hover,.hs-support:hover{
-  transform:translateY(-1px);
-  border-color:rgba(242,195,75,.92);
-  background:rgba(216,165,29,.025);
-  box-shadow:
-    0 0 6px rgba(242,195,75,.72),
-    0 0 11px rgba(242,195,75,.26),
-    inset 0 0 0 1px rgba(242,195,75,.55);
-}
-
-
-
-
-
-
-/* SOCIAL ICONS — LIGHT UP ON HOVER, NO BOX */
-.hs-instagram,
-.hs-facebook,
-.hs-youtube,
-.hs-email{
-  border:none;
-  background:transparent;
-  box-shadow:none;
-  transform:none;
-  backdrop-filter:none;
-  transition:backdrop-filter .2s ease, box-shadow .2s ease, transform .2s ease;
-}
-
-.hs-instagram:hover,
-.hs-facebook:hover,
-.hs-youtube:hover,
-.hs-email:hover{
-  backdrop-filter:brightness(1.7) saturate(1.4);
-  -webkit-backdrop-filter:brightness(1.7) saturate(1.4);
-  box-shadow:
-    0 0 16px rgba(242,195,75,.9),
-    0 0 32px rgba(242,195,75,.5);
-  transform:scale(1.06);
-}
-
-
-
-/* Prevent a clicked hotspot from keeping a gold focus rectangle */
-.hotspot:focus{
-  outline:none;
-}
-.hotspot:focus:not(:hover){
-  border-color:transparent;
-  background:transparent;
-  box-shadow:none;
-  transform:none;
-}
-
-/* TOP NAVIGATION — GOLD UNDERLINE ONLY */
-.hs-home,
-.hs-about,
-.hs-teams,
-.hs-schedule,
-.hs-sponsors,
-.hs-registration,
-.hs-contact{
-  border:none;
-  border-radius:0;
-  background:transparent;
-  box-shadow:none;
-}
-
-.hs-home:hover,
-.hs-about:hover,
-.hs-teams:hover,
-.hs-schedule:hover,
-.hs-sponsors:hover,
-.hs-registration:hover,
-.hs-contact:hover{
-  border:none;
-  background:transparent;
-  box-shadow:inset 0 -3px 0 rgba(242,195,75,.98);
-  transform:none;
-}
-/* NEW RESPONSIVE HOMEPAGE */
 .menu-toggle{
   display:none;
   background:none;border:2px solid var(--gold);color:var(--gold);
@@ -270,35 +66,137 @@ form{display:grid;gap:17px}
 }
 .mobile-drawer .support{color:var(--gold-light)}
 .mobile-drawer.open{display:flex}
+.mobile-drawer-socials{display:flex;gap:16px;padding:16px 20px;flex-wrap:wrap;}
+.mobile-drawer-socials a{padding:0;border:0;font-size:12px;color:var(--gold-light);}
 
+/* ===================== VETERAN BANNER ===================== */
+.veteran-banner{
+  background:
+    linear-gradient(90deg, rgba(5,6,8,.95), rgba(10,20,50,.85), rgba(5,6,8,.95)),
+    repeating-linear-gradient(90deg, #0a1030 0 40px, #0d1436 40px 80px);
+  border-bottom:2px solid var(--gold);
+  padding:10px 0;
+}
+.veteran-inner{
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+}
+.veteran-eagle{width:64px;height:auto;flex-shrink:0;}
+.veteran-text{flex:1;text-align:center;}
+.veteran-title{
+  font-family:'Anton',Impact,sans-serif;letter-spacing:1px;
+  color:var(--gold-light);font-size:clamp(15px,2.4vw,26px);
+  text-shadow:2px 2px 0 #000;
+}
+.veteran-sub{color:var(--muted);font-size:11.5px;margin-top:4px;}
+.veteran-right{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.veteran-shield{width:44px;height:44px;}
+.veteran-flag{font-size:11px;font-weight:900;color:var(--white);text-transform:uppercase;letter-spacing:.5px;}
+.veteran-flag-sub{color:var(--gold-light);font-size:10px;margin-top:2px;}
+
+/* ===================== HEADER SOCIAL ICONS ===================== */
+.header-socials{display:flex;gap:8px;align-items:center;margin-left:auto;margin-right:14px;}
+.social-icon{
+  width:34px;height:34px;display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--gold);border-radius:5px;color:var(--gold);
+  transition:box-shadow .18s ease, color .18s ease, background .18s ease, transform .18s ease;
+}
+.social-icon svg{width:17px;height:17px;}
+.social-icon:hover{
+  color:var(--gold-light);background:rgba(216,165,29,.12);transform:translateY(-2px);
+  box-shadow:0 0 10px rgba(242,195,75,.85), 0 0 20px rgba(242,195,75,.4);
+}
+
+/* ===================== HOMEPAGE HERO ===================== */
 .hero-band{
+  position:relative;
+  overflow:hidden;
   border-bottom:2px solid var(--gold);
   background:
-    radial-gradient(circle at 18% 20%,rgba(23,103,255,.16),transparent 35%),
-    radial-gradient(circle at 85% 80%,rgba(216,165,29,.10),transparent 40%),
-    #050608;
+    radial-gradient(circle at 20% 30%,rgba(23,103,255,.14),transparent 35%),
+    url("../images/texture-crop.png");
+  background-size: 400px 180px;
+  background-color:#0c0d10;
   padding:56px 0;
 }
-.hero-grid{
-  display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;
+.hero-talons{
+  position:absolute;
+  right:0;top:0;
+  height:100%;
+  width:auto;
+  max-width:55%;
+  object-fit:cover;
+  object-position:left center;
+  opacity:.9;
+  pointer-events:none;
 }
-.kicker{color:var(--gold-light);text-transform:uppercase;font-weight:900;letter-spacing:3px;font-size:13px;}
+.hero-grid{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.1fr .9fr .5fr;gap:20px;align-items:center;
+}
 .hero-title{
-  font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;
-  font-size:clamp(40px,6vw,72px);line-height:.95;margin:8px 0 0;
+  font-family:'Anton',Impact,sans-serif;text-transform:uppercase;
+  font-size:clamp(42px,6vw,74px);line-height:.92;margin:0;
   color:var(--white);text-shadow:4px 4px 0 #000;
 }
 .hero-title span{color:var(--royal-bright)}
 .hero-tagline{
-  color:var(--gold);font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;
-  font-size:clamp(20px,3vw,30px);letter-spacing:1px;margin:6px 0 18px;
+  font-family:'Permanent Marker',cursive;color:var(--gold);
+  font-size:clamp(22px,3vw,34px);margin:6px 0 18px;transform:rotate(-1.5deg);
 }
-.hero-copy p{color:var(--muted);line-height:1.7;max-width:520px;}
+.marker-text{font-family:'Permanent Marker',cursive;color:var(--gold);font-weight:400;}
+.hero-copy p{color:var(--muted);line-height:1.7;max-width:480px;}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;}
 .hero-actions .btn small{display:block;font-size:10px;font-weight:600;text-transform:none;letter-spacing:0;opacity:.85;}
 .hero-crest{display:flex;justify-content:center;}
-.hero-crest img{width:100%;max-width:340px;}
+.hero-crest img{width:100%;max-width:280px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.6));}
+.hero-side-copy{color:var(--white);font-size:15px;line-height:1.5;text-align:right;}
+.hero-side-copy p{margin:0 0 4px;}
+.hero-side-copy .marker-text{font-size:26px;display:block;}
 
+/* ===================== MISSION LINE / FOOTER BAND ===================== */
+.mission-line{
+  font-family:'Permanent Marker',cursive;font-weight:400;text-transform:none;
+  font-size:clamp(22px,4vw,40px);color:var(--white);
+}
+.mission-line span{color:var(--royal-bright)}
+.mission-band{position:relative;overflow:hidden;}
+.feather{position:absolute;top:0;height:100%;width:auto;opacity:.9;pointer-events:none;z-index:1;}
+.feather-left{left:0;}
+.feather-right{right:0;}
+.mission-band .wrap{position:relative;z-index:2;}
+
+/* ===================== INNER PAGE HERO ===================== */
+.page-hero{
+  position:relative;min-height:220px;display:grid;place-items:center;text-align:center;
+  border-bottom:2px solid var(--gold);
+  background:
+    linear-gradient(90deg,rgba(2,4,8,.96),rgba(3,21,61,.78),rgba(2,4,8,.96)),
+    url("../images/suncoast-ravens-homepage.png") center 40%/cover no-repeat;
+}
+.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.35))}
+.page-hero-content{position:relative;z-index:2;padding:30px 20px}
+.kicker{color:var(--gold-light);text-transform:uppercase;font-weight:900;letter-spacing:3px}
+.page-hero h1{
+  margin:8px 0 0;font-family:Impact,Arial Black,sans-serif;
+  font-size:clamp(52px,8vw,105px);line-height:.9;text-transform:uppercase;
+  text-shadow:6px 6px 0 #000;
+}
+.page-hero h1 span{color:var(--royal-bright)}
+
+/* ===================== SHARED SECTIONS / PANELS ===================== */
+.section{padding:72px 0}
+.section.alt{background:rgba(255,255,255,.02);border-top:1px solid rgba(216,165,29,.3);border-bottom:1px solid rgba(216,165,29,.3);}
+.section-title{font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;font-size:clamp(38px,5vw,64px);margin:0 0 25px}
+.section-title span{color:var(--gold)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.panel{
+  background:linear-gradient(145deg,rgba(14,18,24,.96),rgba(5,7,10,.96));
+  border:1px solid var(--line);padding:28px;box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+.panel h2,.panel h3{font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;letter-spacing:.5px}
+.panel h3{font-size:28px;margin:0 0 12px;color:var(--gold-light)}
+.panel p,.panel li{color:var(--muted);line-height:1.65}
 .stat-number{
   font-family:Impact,Arial Black,sans-serif;font-size:44px;color:var(--gold-light);
 }
@@ -306,15 +204,67 @@ form{display:grid;gap:17px}
   padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:13.5px;
 }
 .mini-event strong{color:var(--gold-light);display:block;font-size:12px;letter-spacing:.5px;}
-.section.alt{background:rgba(255,255,255,.02);border-top:1px solid rgba(216,165,29,.3);border-bottom:1px solid rgba(216,165,29,.3);}
 
+.btn{
+  display:inline-block;padding:14px 20px;border:2px solid var(--gold);
+  text-transform:uppercase;font-weight:900;letter-spacing:1px;
+  background:rgba(4,5,8,.85);
+}
+.btn.gold{background:linear-gradient(135deg,var(--gold-light),#9d6b00);color:#050608}
+.btn.blue{background:linear-gradient(135deg,#154eb9,#041d59);border-color:#1e70ff}
+
+/* ===================== SCHEDULE ===================== */
+.schedule-list{display:grid;gap:14px}
+.event{
+  display:grid;grid-template-columns:120px 1fr auto;align-items:center;gap:20px;
+  background:rgba(5,7,10,.92);border:1px solid var(--line);padding:18px;
+}
+.event-date{font-family:Impact,Arial Black,sans-serif;font-size:28px;color:var(--gold-light);text-align:center}
+.event h3{margin:0;font-size:22px}.event p{margin:5px 0 0;color:var(--muted)}
+.badge{background:#061b54;border:1px solid #155fff;padding:8px 10px;font-size:12px;font-weight:900}
+
+/* ===================== SPONSOR TIERS ===================== */
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tier{background:#080a0e;border:2px solid var(--gold);padding:23px 20px;display:flex;flex-direction:column}
+.tier:nth-child(odd){border-color:#155fff}
+.tier .price{font-family:Impact,Arial Black,sans-serif;font-size:48px}
+.tier h3{font-size:26px;margin:10px -20px 18px;padding:11px 15px;text-align:center;background:var(--gold);color:#050608}
+.tier:nth-child(odd) h3{background:#0b47bb;color:white}
+.tier ul{padding-left:18px;flex:1}
+
+/* ===================== FORMS ===================== */
+form{display:grid;gap:17px}
+.field label{display:block;margin-bottom:7px;color:var(--gold-light);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
+.field input,.field textarea,.field select{
+  width:100%;padding:14px;background:#11161e;color:white;border:1px solid #36404f;
+}
+.field textarea{min-height:150px;resize:vertical}
+.notice{padding:14px 16px;border:1px solid var(--gold);background:rgba(216,165,29,.09);color:#f4d77e}
+
+/* ===================== FOOTER ===================== */
+.site-footer{padding:35px 0;border-top:2px solid var(--gold);background:#020305}
+.footer-row{display:flex;justify-content:space-between;gap:24px;align-items:center}
+.footer-row p{color:#9ca5b2;max-width:680px;margin:0}
+.footer-brand{font-family:Impact,Arial Black,sans-serif;font-size:25px;color:var(--gold-light)}
+
+/* ===================== RESPONSIVE ===================== */
 @media(max-width:900px){
   .site-nav{display:none}
   .menu-toggle{display:block}
+  .grid-2,.grid-3,.tiers{grid-template-columns:1fr}
+  .event{grid-template-columns:86px 1fr}.event .badge{grid-column:2}
+  .footer-row{flex-direction:column;align-items:flex-start}
+
+  .veteran-inner{flex-direction:column;text-align:center;gap:8px;}
+  .veteran-eagle{display:none;}
+  .header-socials{margin-right:8px;}
+  .hero-talons{max-width:100%;opacity:.35;}
   .hero-grid{grid-template-columns:1fr;text-align:center;}
   .hero-copy p{margin-left:auto;margin-right:auto;}
   .hero-actions{justify-content:center;}
   .hero-crest{order:-1;}
-  .hero-crest img{max-width:220px;}
+  .hero-crest img{max-width:200px;}
+  .hero-side-copy{text-align:center;margin-top:10px;}
+  .hero-tagline{transform:none;}
+  .feather{display:none;}
 }
-
