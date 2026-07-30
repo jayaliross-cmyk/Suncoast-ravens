@@ -123,14 +123,14 @@ button,input,textarea,select{font:inherit}
 .site-nav a:hover,.site-nav .active{color:var(--gold-light)}
 .cta-small{border:1px solid var(--gold);padding:12px 15px}
 .page-hero{
-  position:relative;min-height:360px;display:grid;place-items:center;text-align:center;
+  position:relative;min-height:220px;display:grid;place-items:center;text-align:center;
   border-bottom:2px solid var(--gold);
   background:
     linear-gradient(90deg,rgba(2,4,8,.96),rgba(3,21,61,.78),rgba(2,4,8,.96)),
     url("../images/suncoast-ravens-homepage.png") center 40%/cover no-repeat;
 }
 .page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.35))}
-.page-hero-content{position:relative;z-index:2;padding:55px 20px}
+.page-hero-content{position:relative;z-index:2;padding:30px 20px}
 .kicker{color:var(--gold-light);text-transform:uppercase;font-weight:900;letter-spacing:3px}
 .page-hero h1{
   margin:8px 0 0;font-family:Impact,Arial Black,sans-serif;
