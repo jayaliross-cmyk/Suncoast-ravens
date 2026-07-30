@@ -207,31 +207,29 @@ form{display:grid;gap:17px}
 
 
 
-/* SOCIAL ICONS — LIGHT UP ON HOVER */
+/* SOCIAL ICONS — LIGHT UP ON HOVER, NO BOX */
 .hs-instagram,
 .hs-facebook,
 .hs-youtube,
 .hs-email{
-  border:1px solid transparent;
-  border-radius:6px;
+  border:none;
   background:transparent;
   box-shadow:none;
   transform:none;
   backdrop-filter:none;
-  transition:backdrop-filter .2s ease, box-shadow .2s ease, border-color .2s ease, transform .2s ease;
+  transition:backdrop-filter .2s ease, box-shadow .2s ease, transform .2s ease;
 }
 
 .hs-instagram:hover,
 .hs-facebook:hover,
 .hs-youtube:hover,
 .hs-email:hover{
-  border-color:rgba(242,195,75,.6);
-  backdrop-filter:brightness(1.6) saturate(1.3);
-  -webkit-backdrop-filter:brightness(1.6) saturate(1.3);
+  backdrop-filter:brightness(1.7) saturate(1.4);
+  -webkit-backdrop-filter:brightness(1.7) saturate(1.4);
   box-shadow:
-    0 0 14px rgba(242,195,75,.85),
-    0 0 28px rgba(242,195,75,.45);
-  transform:scale(1.08);
+    0 0 16px rgba(242,195,75,.9),
+    0 0 32px rgba(242,195,75,.5);
+  transform:scale(1.06);
 }
 
 
