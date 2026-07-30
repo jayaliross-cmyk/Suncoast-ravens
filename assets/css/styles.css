@@ -67,10 +67,7 @@ button,input,textarea,select{font:inherit}
 .hs-sponsor{left:20.25%;top:59.00%;width:17.25%;height:5.75%}
 .hs-about-more{left:26.85%;top:89.70%;width:14.00%;height:4.15%}
 .hs-sponsor-lower{left:43.85%;top:77.05%;width:21.15%;height:4.55%}
-.hs-instagram{left:92.55%;top:27.25%;width:3.55%;height:4.65%}
-.hs-facebook{left:92.55%;top:32.45%;width:3.55%;height:4.65%}
-.hs-youtube{left:92.55%;top:37.65%;width:3.55%;height:4.65%}
-.hs-email{left:92.55%;top:42.85%;width:3.55%;height:4.65%}
+
 
 /* Mobile version preserves the same approved visual language */
 .mobile-home{display:none}
