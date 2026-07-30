@@ -69,87 +69,69 @@ body.compact-page{
 .mobile-drawer-socials{display:flex;gap:16px;padding:16px 20px;flex-wrap:wrap;}
 .mobile-drawer-socials a{padding:0;border:0;font-size:12px;color:var(--gold-light);}
 
-/* ===================== VETERAN BANNER ===================== */
-.veteran-banner{
-  background:
-    linear-gradient(90deg, rgba(5,6,8,.95), rgba(10,20,50,.85), rgba(5,6,8,.95)),
-    repeating-linear-gradient(90deg, #0a1030 0 40px, #0d1436 40px 80px);
-  border-bottom:2px solid var(--gold);
-  padding:10px 0;
-}
-.veteran-inner{
-  display:flex;align-items:center;justify-content:space-between;gap:18px;
-}
-.veteran-eagle{width:64px;height:auto;flex-shrink:0;}
-.veteran-text{flex:1;text-align:center;}
-.veteran-title{
-  font-family:'Anton',Impact,sans-serif;letter-spacing:1px;
-  color:var(--gold-light);font-size:clamp(15px,2.4vw,26px);
-  text-shadow:2px 2px 0 #000;
-}
-.veteran-sub{color:var(--muted);font-size:11.5px;margin-top:4px;}
-.veteran-right{display:flex;align-items:center;gap:10px;flex-shrink:0;}
-.veteran-shield{width:44px;height:44px;}
-.veteran-flag{font-size:11px;font-weight:900;color:var(--white);text-transform:uppercase;letter-spacing:.5px;}
-.veteran-flag-sub{color:var(--gold-light);font-size:10px;margin-top:2px;}
-
-/* ===================== HEADER SOCIAL ICONS ===================== */
-.header-socials{display:flex;gap:8px;align-items:center;margin-left:auto;margin-right:14px;}
 .social-icon{
-  width:34px;height:34px;display:flex;align-items:center;justify-content:center;
+  width:36px;height:36px;display:flex;align-items:center;justify-content:center;
   border:1px solid var(--gold);border-radius:5px;color:var(--gold);
+  background:rgba(3,4,6,.4);
   transition:box-shadow .18s ease, color .18s ease, background .18s ease, transform .18s ease;
 }
-.social-icon svg{width:17px;height:17px;}
+.social-icon svg{width:18px;height:18px;}
 .social-icon:hover{
-  color:var(--gold-light);background:rgba(216,165,29,.12);transform:translateY(-2px);
+  color:var(--gold-light);background:rgba(216,165,29,.15);transform:translateY(-2px);
   box-shadow:0 0 10px rgba(242,195,75,.85), 0 0 20px rgba(242,195,75,.4);
 }
 
-/* ===================== HOMEPAGE HERO ===================== */
-.hero-band{
+/* ===================== HOMEPAGE HERO (image background + real overlays) ===================== */
+.hero-image-band{
   position:relative;
-  overflow:hidden;
+  width:100%;
+  max-width:1536px;
+  margin:0 auto;
+  aspect-ratio:1536/1024;
+  background:#0c0d10 url("../images/hero-final-bg.png") center top/100% 100% no-repeat;
   border-bottom:2px solid var(--gold);
-  background:
-    radial-gradient(circle at 20% 30%,rgba(23,103,255,.14),transparent 35%),
-    radial-gradient(circle at 60% 15%, rgba(255,255,255,.03), transparent 40%),
-    radial-gradient(circle at 30% 80%, rgba(255,255,255,.025), transparent 35%),
-    radial-gradient(circle at 80% 60%, rgba(255,255,255,.02), transparent 30%),
-    #0c0d10;
-  padding:56px 0;
+  overflow:hidden;
 }
-.hero-talons{
+.hero-overlay-actions{
   position:absolute;
-  right:0;top:0;
-  height:100%;
-  width:auto;
-  max-width:55%;
-  object-fit:cover;
-  object-position:left center;
-  opacity:.9;
-  pointer-events:none;
+  left:3.5%;
+  top:80%;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  z-index:3;
 }
-.hero-grid{
-  position:relative;z-index:2;
-  display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center;
+.hero-overlay-actions .btn small{display:block;font-size:10px;font-weight:600;text-transform:none;letter-spacing:0;opacity:.85;}
+.hero-overlay-socials{
+  position:absolute;
+  right:2%;
+  top:24%;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+  z-index:3;
 }
-.hero-title{
-  font-family:'Anton',Impact,sans-serif;text-transform:uppercase;
-  font-size:clamp(42px,6vw,74px);line-height:.92;margin:0;
-  color:var(--white);text-shadow:4px 4px 0 #000;
+
+@media(max-width:900px){
+  .hero-overlay-actions{
+    position:static;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:16px;
+  }
+  .hero-overlay-socials{
+    position:static;
+    flex-direction:row;
+    justify-content:center;
+    padding:0 16px 16px;
+  }
+  .hero-image-band{
+    aspect-ratio:auto;
+    display:flex;
+    flex-direction:column;
+  }
 }
-.hero-title span{color:var(--royal-bright)}
-.hero-tagline{
-  font-family:'Permanent Marker',cursive;color:var(--gold);
-  font-size:clamp(22px,3vw,34px);margin:6px 0 18px;transform:rotate(-1.5deg);
-}
-.marker-text{font-family:'Permanent Marker',cursive;color:var(--gold);font-weight:400;}
-.hero-copy p{color:var(--muted);line-height:1.7;max-width:480px;}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;}
-.hero-actions .btn small{display:block;font-size:10px;font-weight:600;text-transform:none;letter-spacing:0;opacity:.85;}
-.hero-crest{display:flex;justify-content:center;}
-.hero-crest img{width:100%;max-width:280px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.6));}
 
 /* ===================== MISSION LINE / FOOTER BAND ===================== */
 .mission-line{
