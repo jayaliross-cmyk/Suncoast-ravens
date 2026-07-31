@@ -144,8 +144,8 @@ body.compact-page{
 .page-hero.teams-hero{
   background-image:url("../images/teams-banner-v2.png");
   background-position:center;
-  background-size:cover;
-  min-height:600px;
+  background-size:contain;
+  
 }
 .page-hero.sponsors-hero{
   background-image:url("../images/sponsors-banner.png");
