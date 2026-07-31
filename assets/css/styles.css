@@ -144,37 +144,37 @@ body.compact-page{
 .page-hero.teams-hero{
   background-image:url("../images/teams-banner-v2.png");
   background-position:center;
-  background-size:50% auto;
+  background-size:55% auto;
   
 }
 .page-hero.sponsors-hero{
   background-image:url("../images/sponsors-banner.png");
   background-position:center;
-  background-size:80% auto;
+  background-size:55% auto;
  
 }
 .page-hero.registration-hero{
   background-image:url("../images/registration-banner.png");
   background-position:center;
- background-size:80% auto;
+ background-size:55% auto;
   
 }
 .page-hero.contact-hero{
   background-image:url("../images/contact-banner.png");
   background-position:center;
-  background-size:80% auto;
+  background-size:55% auto;
   
 }
 .page-hero.schedule-hero{
   background-image:url("../images/schedule-banner.png");
   background-position:center;
-  background-size:80% auto;
+  background-size:55% auto;
   
 }
 .page-hero.about-hero{
   background-image:url("../images/about-banner.png");
   background-position:center;
-  background-size:80% auto;
+  background-size:55% auto;
  
 }
 
