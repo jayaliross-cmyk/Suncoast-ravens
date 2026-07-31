@@ -270,7 +270,7 @@ form{display:grid;gap:17px}
   .footer-row{flex-direction:column;align-items:flex-start}
 
   .page-hero{
-    min-height:220px;
+    min-height:160px;
   }
   .page-hero.teams-hero,
   .page-hero.sponsors-hero,
