@@ -268,4 +268,17 @@ form{display:grid;gap:17px}
   .grid-2,.grid-3,.tiers{grid-template-columns:1fr}
   .event{grid-template-columns:86px 1fr}.event .badge{grid-column:2}
   .footer-row{flex-direction:column;align-items:flex-start}
+
+  .page-hero{
+    min-height:220px;
+  }
+  .page-hero.teams-hero,
+  .page-hero.sponsors-hero,
+  .page-hero.registration-hero,
+  .page-hero.contact-hero,
+  .page-hero.schedule-hero,
+  .page-hero.about-hero{
+    background-size:contain;
+    background-color:#050608;
+  }
 }
