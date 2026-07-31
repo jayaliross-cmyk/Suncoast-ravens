@@ -170,7 +170,7 @@ body.compact-page{
   background-image:url("../images/about-banner.png");
   background-position:center;
   background-size:cover;
-  min-height:400px;
+  min-height:350px;
 }
 
 .page-hero.teams-hero .page-hero-content,
