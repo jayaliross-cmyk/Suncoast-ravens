@@ -137,7 +137,7 @@ body.compact-page{
   background-image:
     linear-gradient(90deg,rgba(2,4,8,.75),rgba(3,21,61,.55),rgba(2,4,8,.75)),
     url("../images/hero-final-bg.png");
-  background-position:center 200000000%;
+  background-position:center 1200000000%;
   background-size:contain;
   background-repeat:no-repeat;
 }
