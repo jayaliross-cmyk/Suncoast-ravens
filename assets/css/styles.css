@@ -171,6 +171,16 @@ body.compact-page{
   background-position:center;
   background-size:cover;
 }
+
+.page-hero.teams-hero .page-hero-content,
+.page-hero.sponsors-hero .page-hero-content,
+.page-hero.registration-hero .page-hero-content,
+.page-hero.contact-hero .page-hero-content,
+.page-hero.schedule-hero .page-hero-content,
+.page-hero.about-hero .page-hero-content{
+  display:none;
+}
+
 .page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.35))}
 .page-hero-content{position:relative;z-index:2;padding:30px 20px}
 .kicker{color:var(--gold-light);text-transform:uppercase;font-weight:900;letter-spacing:3px}
