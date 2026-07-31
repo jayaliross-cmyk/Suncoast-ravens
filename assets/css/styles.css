@@ -138,8 +138,38 @@ body.compact-page{
     linear-gradient(90deg,rgba(2,4,8,.75),rgba(3,21,61,.55),rgba(2,4,8,.75)),
     url("../images/hero-final-bg.png");
   background-position:center 20%;
-  background-size:80% auto;
+  background-size:140% auto;
   background-repeat:no-repeat;
+}
+.page-hero.teams-hero{
+  background-image:url("../images/teams-banner-v2.png");
+  background-position:center;
+  background-size:cover;
+}
+.page-hero.sponsors-hero{
+  background-image:url("../images/sponsors-banner.png");
+  background-position:center;
+  background-size:cover;
+}
+.page-hero.registration-hero{
+  background-image:url("../images/registration-banner.png");
+  background-position:center;
+  background-size:cover;
+}
+.page-hero.contact-hero{
+  background-image:url("../images/contact-banner.png");
+  background-position:center;
+  background-size:cover;
+}
+.page-hero.schedule-hero{
+  background-image:url("../images/schedule-banner.png");
+  background-position:center;
+  background-size:cover;
+}
+.page-hero.about-hero{
+  background-image:url("../images/about-banner.png");
+  background-position:center;
+  background-size:cover;
 }
 .page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.35))}
 .page-hero-content{position:relative;z-index:2;padding:30px 20px}
