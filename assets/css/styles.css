@@ -156,7 +156,7 @@ body.compact-page{
 .page-hero.registration-hero{
   background-image:url("../images/registration-banner.png");
   background-position:center;
- background-size:55% auto;
+ background-size:45% auto;
   
 }
 .page-hero.contact-hero{
@@ -174,7 +174,7 @@ body.compact-page{
 .page-hero.about-hero{
   background-image:url("../images/about-banner.png");
   background-position:center;
-  background-size:55% auto;
+  background-size:45% auto;
  
 }
 
