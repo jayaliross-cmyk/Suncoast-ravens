@@ -150,7 +150,7 @@ body.compact-page{
 .page-hero.sponsors-hero{
   background-image:url("../images/sponsors-banner.png");
   background-position:center;
-  background-size:37% auto;
+  background-size:35% auto;
  
 }
 .page-hero.registration-hero{
@@ -162,7 +162,7 @@ body.compact-page{
 .page-hero.contact-hero{
   background-image:url("../images/contact-banner.png");
   background-position:center;
-  background-size:55% auto;
+  background-size:40% auto;
   
 }
 .page-hero.schedule-hero{
