@@ -151,7 +151,7 @@ body.compact-page{
   background-image:url("../images/sponsors-banner.png");
   background-position:center;
   background-size:35% auto;
- 
+  min-height:180px;
 }
 .page-hero.registration-hero{
   background-image:url("../images/registration-banner.png");
